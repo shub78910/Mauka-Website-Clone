@@ -7,11 +7,6 @@ function toggleList(){
     navLinks.classList.toggle("active")
 }
 
-function toggleMiniList(){
-    let subNavContent = document.querySelector(".subNavContent");
-    subNavContent.classList.toggle("subNavContentHover");
-}
-
 function Navigation() {
     return (
         <div className="nav">
@@ -31,7 +26,7 @@ function Navigation() {
                     <a href="#"><li>Cohort Zero</li></a>
                     <a id="hoverDropDown" href="#">
                     <li>
-                    <span>Modules <span><i className="fa fa-arrow-down" onClick={toggleMiniList} id="downArrow"></i> </span> </span>
+                    <span>Modules <span><i className="fa fa-arrow-down"  id="downArrow"></i> </span> </span>
 
                     <div className="subNavContent">
 

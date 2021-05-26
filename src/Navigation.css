@@ -5,7 +5,9 @@
   flex-wrap: wrap;
   background-color: #0a1e32;
   color: white;
-  box-shadow: black 0px 1px 10px;
+  box-shadow: black 0px 10px 10px;
+  position: relative;
+
 }
 
 .logo {
@@ -61,8 +63,8 @@
 #hoverDropDown:hover  .subNavContent{
   display: flex;
   position:absolute;
-  /* margin-top: 5px; */
-  margin-left: 250px;
+  margin-top: 5px;
+  margin-left: 220px;
   border: 1px white solid;
   padding: 1rem;
   transition: 0.2s ease-in;
@@ -112,6 +114,7 @@
   }
 
   .navLinks.active{
+    transition: 0.2s ease-in;
     display: block;
   }
 
@@ -131,7 +134,12 @@
   }
 
   #hoverDropDown:hover  .subNavContent{
-    display: none;
+    position:relative;
+    margin-top: 5px;
+    margin-left: 0px;
+    border: 1px white solid;
+    padding: 1rem;
+    transition: 0.2s ease-in;
   }
 
   
