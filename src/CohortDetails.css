@@ -1,0 +1,24 @@
+.cohort_details{
+    display: flex;
+    align-items: center;
+}
+
+.icons img{
+    border-radius: 50%;
+}
+
+.cohort_details_text h2{
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.cohort_details_text p{
+    color: black;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .image_right img{
+        width: 25rem;
+    }
+}
